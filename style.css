@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E6E6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar Design */
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo {
+    background-image: url("Assets/LOGO.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 100%;
+}
+
+.border-hover {
+    border: 1.5px solid transparent;
+    border-radius: 2px;
+}
+
+.border-hover:hover {
+    border: 1.5px solid white;
+}
+
+/* Delivery Address */
+.nav-deliver {
+    margin: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.icon-deliver {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Add-one {
+    color: #cccccc;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.add-two {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.nav-search {
+    width: 50%;
+    max-width: 800px;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-select {
+    width: 55px;
+    border: none;
+    background-color: #E6E6E6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+
+.search-icon {
+    width: 50px;
+    display: flex;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    color: #131921;
+    background-color: #fcb961;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: #ff9100;
+}
+
+/* Sign In & Orders */
+.nav-signin,
+.orders {
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.Signin-hello,
+.Return {
+    font-size: 12px;
+}
+
+.Signin,
+.order {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cart Portion */
+.nav-cart {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.cart-image {
+    height: 30px;
+    width: 38px;
+    background-image: url("Assets/Cart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-text {
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Bottom Panel Navbar */
+.nav-bar-bottom {
+    background-color: #232F3E;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 32px;
+    padding: 0 8px;
+    margin-left: 10px;
+    color: #E6E6E6;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.all i {
+    font-size: 17px;
+}
+
+.nav-bottom-contants {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #E6E6E6;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-bottom-contants p {
+    margin: 0;
+    padding: 6px 8px;
+    border: 1.5px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nav-bottom-contants p:hover {
+    border: 1.5px solid #ffffff;
+}
+
+/* Hero Section */
+main {
+    position: relative;
+    width: 100%;
+}
+
+.hero {
+    height: 600px;
+    width: 100%;
+    background-image: url("Assets/Hero Background.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.Hero-line {
+    height: 40px;
+    width: 95%;
+    background-color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+}
+
+.Hero-line a {
+    text-decoration: none;
+    color: #007185;
+    margin-left: 5px;
+}
+
+/* Shopping Section Setup */
+.shoping-one,
+.shoping-two {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 2;
+}
+
+.shoping-one {
+    top: 280px;
+}
+
+.shoping-two {
+    top: 730px;
+}
+
+.box {
+    height: 420px;
+    width: 320px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    /* flex-direction: column;---used to make contants in the box vertically aligned */
+}
+
+.box h2 {
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.box img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    /* i previously did not used "objext-fit" */
+}
+
+.box a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007185;
+    font-size: 13px;
+}
+
+/* Shopping Section 3 */
+.shoping-three {
+    width: 96%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+    padding: 20px 0;
+    position: absolute;
+    left: 2%;
+    top: 1180px;
+    /* Sits directly below Section 2 */
+    z-index: 2;
+}
+
+.shoping-three-images {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shoping-three h2 {
+    margin: 10px 35px;
+}
+
+.shoping-three img {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* See personalized recommendations */
+
+
+
+.personalized-recommendations {
+    width: 100%;
+    /* Spans the full screen width */
+    background-color: #ffffff;
+    padding: 35px 0 20px 0;
+
+    /* Subtle horizontal divider lines */
+    border-top: 1px solid #b0aeae;
+    border-bottom: 1px solid #b0aeae;
+
+    /* Centering and spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    /* Positioning (if continuing with absolute) */
+    position: absolute;
+    top: 1500px;
+    left: 0;
+    z-index: 2;
+}
+
+.personalized-recommendations h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Amazon Yellow Pill Button */
+.signin-btn {
+    width: 230px;
+    height: 30px;
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+    /* Rounds into a pill shape */
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.signin-btn:hover {
+    background-color: #f7ca00;
+}
+
+.personalized-recommendations p {
+    font-size: 11px;
+}
+
+.personalized-recommendations a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.personalized-recommendations a:hover {
+    text-decoration: underline;
+    color: #c7511f;
+}
+
+
+/* ----------------Footer------------------ */
+
+.footer {
+    width: 100%;
+    height: 90vh;
+    background-color: #131A22;
+    position: absolute;
+    top: 1737px;
+    left: 0;
+    z-index: 2;
+    color: #E3E6E6;
+}
+
+.back-to-top {
+    width: 100%;
+    height: 50px;
+    background-color: #37475A;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 19px 0;
+    cursor: pointer;
+}
+
+.footer-contant {
+    height: 350px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid #E3E6E6;
+    background-color: #202A38;
+}
+
+.F-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.F-list h3 {
+    margin: 20px 0;
+}
+
+.F-list a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #E3E6E6;
+}
+
+/* ------------Footer Secon Part------------ */
+
+.f-second {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid #E3E6E6;
+}
+
+
+.f-second-logo img {
+    height: 50px;
+    width: 100%;
+    padding: 0 70px;
+    margin-top: 5px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.f-second-lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.f-second-lang i {
+    padding: 0 15px 0 5px;
+}
+
+.indian-rupee {
+    margin: 0 5px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+/* US Flsg and United states button */
+.f-img {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 0 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.f-img img {
+    width: 25%;
+    height: 15px;
+    object-fit: contain;
+    margin: 0 5px;
+}
+
+.f-img p {
+    width: 120px;
+
+}
+
+/* -----------Footer Last Part---------- */
+
+.footer-last{
+    border-bottom:0.1px solid #E3E6E6 ;
+}
+
+.last-part {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-part a{
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 0 8px;
+}
+
+.last-part-p{
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 10px ;
+}
+
+/* -------------------------------- */
+
+.Abinash{
+    text-align: center;
+    margin-top: 50px ;
+}
